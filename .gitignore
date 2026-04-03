@@ -1,0 +1,8 @@
+# Obsidian workspace state is machine-local UI/session data.
+# Tracking it across multiple open desktops causes constant churn and merge noise.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# OS files
+.DS_Store
+.trash/

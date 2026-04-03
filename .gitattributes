@@ -1,0 +1,11 @@
+# Keep line endings stable across macOS, Linux, and Windows so Obsidian/Git
+# sync doesn't generate noisy CRLF/LF-only diffs or unnecessary merge
+# conflicts. Windows is the usual source of CRLF churn, so we force LF for
+# vault text content regardless of each machine's local Git defaults.
+* text=auto eol=lf
+
+# Explicitly pin the main vault file types that change often.
+# These are the files most likely to create annoying cross-machine churn.
+*.md   text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf
