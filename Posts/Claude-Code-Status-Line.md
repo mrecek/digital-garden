@@ -14,6 +14,14 @@ origin: ai-assisted
 
 A custom status line for Claude Code showing a gradient context bar, rate limit usage, and git state. Inspired by [danielmiessler/Personal_AI_Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure). Tailwind-inspired colors shift green → yellow → orange → red as values increase. Responsive across four terminal width modes: nano (<35 cols), micro (35-54), mini (55-79), normal (80+).
 
+## Quick Setup
+
+Paste this prompt into Claude Code:
+
+```
+Fetch https://raw.githubusercontent.com/mrecek/digital-garden/main/Posts/Claude-Code-Status-Line.md and set up the custom status line described in it. Write the script to ~/.claude/statusline.sh and make it executable. Merge the statusLine config into ~/.claude/settings.json (create it if it doesn't exist). Before writing settings, ask me what compactionThreshold value I want (the article explains what it does).
+```
+
 ## Settings
 
 Add to `~/.claude/settings.json`:
